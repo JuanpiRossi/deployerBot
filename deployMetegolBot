@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /var/sources/metegolBotTelegram;git pull
+sudo systemctl restart metegolBot.service
+sudo systemctl status metegolBot.service
