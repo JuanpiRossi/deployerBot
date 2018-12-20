@@ -14,7 +14,10 @@ def echo(bot,update,args):
     if str(update.message.from_user.id) in allowed_users:
         if args[0] == "metegol":
             os.system("sh /var/sources/deployer/deployMetegolBot")
-            bot.send_message(chat_id=update.message.chat_id,text="deployeado!")
+            bot.send_message(chat_id=update.message.chat_id,text="deployeado bot metegol!")
+        elif args[0] == "moorea":
+            os.system("sh /var/sources/deployer/deployMooreaBot")
+            bot.send_message(chat_id=update.message.chat_id,text="deployeado bot moorea!")
         else:
             bot.send_message(chat_id=update.message.chat_id,text="No se encontro la tarea de deploy: " + str(args[0]))
     else:

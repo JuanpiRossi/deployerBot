@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /var/sources/telegram-bots;git pull
+sudo systemctl restart deployMooreaBot.service
+sudo systemctl status deployMooreaBot.service
